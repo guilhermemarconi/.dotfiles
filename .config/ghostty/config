@@ -1,0 +1,38 @@
+theme = Catppuccin Mocha
+
+maximize = true
+
+alpha-blending = native
+
+cursor-style-blink = true
+cursor-text = #111111
+
+# background-opacity = 0.75
+# background-blur = true
+# background-blur-radius = 20
+
+window-decoration = true
+window-padding-color = background
+window-padding-balance = true
+window-save-state = always
+
+font-family = "GeistMono Nerd Font Propo"
+font-size = 16
+font-feature = -liga
+
+bold-is-bright = true
+
+copy-on-select = false
+clipboard-read = allow
+clipboard-write = allow
+
+quit-after-last-window-closed = true
+
+auto-update = download
+auto-update-channel = tip
+
+# macos-non-native-fullscreen = true
+macos-titlebar-style = hidden
+macos-icon = chalkboard
+
+keybind = ctrl+cmd+r=reload_config

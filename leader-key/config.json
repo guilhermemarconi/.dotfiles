@@ -1,0 +1,118 @@
+{
+  "actions" : [
+    {
+      "actions" : [
+        {
+          "key" : "a",
+          "type" : "application",
+          "value" : "/Applications/Affinity.app"
+        },
+        {
+          "key" : "c",
+          "type" : "application",
+          "value" : "/Applications/Notion Calendar.app"
+        },
+        {
+          "key" : "e",
+          "type" : "application",
+          "value" : "/Applications/Microsoft Excel.app"
+        },
+        {
+          "key" : "g",
+          "type" : "application",
+          "value" : "/Applications/Ghostty.app"
+        },
+        {
+          "key" : "n",
+          "type" : "application",
+          "value" : "/Applications/Notion.app"
+        },
+        {
+          "key" : "v",
+          "type" : "application",
+          "value" : "/Applications/CapCut.app"
+        },
+        {
+          "actions" : [
+            {
+              "key" : "h",
+              "type" : "application",
+              "value" : "/Applications/Helium.app"
+            },
+            {
+              "key" : "s",
+              "type" : "application",
+              "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+            },
+            {
+              "key" : "z",
+              "type" : "application",
+              "value" : "/Applications/Zen Browser.app"
+            }
+          ],
+          "iconPath" : "globe",
+          "key" : "b",
+          "label" : "Browser",
+          "type" : "group"
+        },
+        {
+          "actions" : [
+            {
+              "key" : "d",
+              "type" : "application",
+              "value" : "/Applications/Discord.app"
+            },
+            {
+              "key" : "t",
+              "type" : "application",
+              "value" : "/Applications/Telegram Lite.app"
+            },
+            {
+              "key" : "w",
+              "type" : "application",
+              "value" : "/Applications/WhatsApp.localized/WhatsApp.app"
+            }
+          ],
+          "iconPath" : "bubble.left.and.text.bubble.right",
+          "key" : "m",
+          "label" : "Messenger",
+          "type" : "group"
+        }
+      ],
+      "iconPath" : "arrow.up.forward.app.fill",
+      "key" : "o",
+      "label" : "Open",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "iconPath" : "rectangle.and.pencil.and.ellipsis",
+          "key" : "a",
+          "label" : "Authy",
+          "type" : "url",
+          "value" : "raycast://extensions/guga4ka/authy/search-otp"
+        },
+        {
+          "iconPath" : "lock.icloud",
+          "key" : "b",
+          "label" : "Bitwarden",
+          "type" : "url",
+          "value" : "raycast://extensions/jomifepe/bitwarden/search"
+        },
+        {
+          "iconPath" : "camera",
+          "key" : "c",
+          "label" : "Show camera",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/system/open-camera"
+        }
+      ],
+      "iconPath" : "gear",
+      "key" : "r",
+      "label" : "Raycast",
+      "type" : "group"
+    }
+  ],
+  "type" : "group"
+}
