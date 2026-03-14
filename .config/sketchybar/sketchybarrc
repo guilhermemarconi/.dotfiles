@@ -67,7 +67,7 @@ sketchybar \
   --add item clock right \
     --set clock \
       update_freq=10 \
-      icon= \
+      icon= \
       script="$PLUGIN_DIR/clock.sh" \
   \
   --add item wifi right \
@@ -89,7 +89,7 @@ sketchybar \
   --add item disk right \
     --set disk \
       script="$PLUGIN_DIR/disk.sh" \
-      icon= \
+      icon= \
       update_freq=3 \
       label.padding_left=0 \
       icon.padding_right=10 \
