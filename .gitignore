@@ -1,3 +1,5 @@
+.DS_Store
+
 .config/gh
 .config/nvim/lazy-lock.json
 .config/raycast/extensions
