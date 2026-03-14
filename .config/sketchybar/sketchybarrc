@@ -30,25 +30,35 @@ sketchybar --default "${default[@]}"
 
 ##### Left Items #####
 
-# sketchybar \
-#           --add item apple left \
-#           --set apple icon= label.drawing=off icon.padding_right=10
-
 sketchybar --add event aerospace_workspace_change
 
-sketchybar --add item window_title left \
-           --set window_title \
-             padding_left=-10 \
-             icon.drawing=off \
-             width=dynamic \
-             updates=on \
-             update_freq=1 \
-             script="$PLUGIN_DIR/aerospace_window_title.sh" \
-             --subscribe window_title aerospace_workspace_change
+for WORKSPACE in B C M N; do
+  PADDING_LEFT=3
+  if [ "$WORKSPACE" = "B" ]; then
+    PADDING_LEFT=-10
+  fi
+
+  sketchybar --add item "workspace.$WORKSPACE" left
+
+  sketchybar --set "workspace.$WORKSPACE" \
+    label="$WORKSPACE" \
+    icon.drawing=off \
+    width=dynamic \
+    padding_left=$PADDING_LEFT \
+    padding_right=3 \
+    label.padding_left=8 \
+    label.padding_right=8 \
+    background.corner_radius=3 \
+    background.height=26 \
+    background.border_width=1 \
+    script="$PLUGIN_DIR/aerospace_window_title.sh"
+
+  sketchybar --subscribe "workspace.$WORKSPACE" aerospace_workspace_change
+done
 
 sketchybar \
           --add item front_app left \
-          --set front_app icon.drawing=off script="$PLUGIN_DIR/front_app.sh"  \
+          --set front_app icon.drawing=off script="$PLUGIN_DIR/front_app.sh" \
           --subscribe front_app front_app_switched
 
 ##### Right Items #####
@@ -57,7 +67,7 @@ sketchybar \
   --add item clock right \
     --set clock \
       update_freq=10 \
-      icon= \
+      icon= \
       script="$PLUGIN_DIR/clock.sh" \
   \
   --add item wifi right \
@@ -79,7 +89,7 @@ sketchybar \
   --add item disk right \
     --set disk \
       script="$PLUGIN_DIR/disk.sh" \
-      icon= \
+      icon= \
       update_freq=3 \
       label.padding_left=0 \
       icon.padding_right=10 \

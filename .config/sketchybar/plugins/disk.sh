@@ -1,5 +1,6 @@
 #!/bin/bash
 
-LABEL="$(diskutil apfs list | awk -F '[()]' '/Container disk3/{f=1} f && /Capacity Not Allocated/{print $2; exit}')"
+AVAILABLE_BYTES=$(df / | awk 'NR==2 {print $4}')
+AVAILABLE_GB=$(awk "BEGIN {printf \"%.1fGB\", $AVAILABLE_BYTES / 1048576}")
 
-sketchybar --set "$NAME" label="$LABEL"
+sketchybar --set "$NAME" label="$AVAILABLE_GB"
