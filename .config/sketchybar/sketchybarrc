@@ -32,9 +32,9 @@ sketchybar --default "${default[@]}"
 
 sketchybar --add event aerospace_workspace_change
 
-for WORKSPACE in B C M N; do
+for WORKSPACE in C B N M; do
   PADDING_LEFT=3
-  if [ "$WORKSPACE" = "B" ]; then
+  if [ "$WORKSPACE" = "C" ]; then
     PADDING_LEFT=-10
   fi
 
