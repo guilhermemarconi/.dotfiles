@@ -1,6 +1,7 @@
 .DS_Store
 
 .config/gh
+.config/mole
 .config/nvim/lazy-lock.json
 .config/raycast/extensions
 .config/karabiner/automatic_backups
