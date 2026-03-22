@@ -1,118 +1,243 @@
 {
-  "actions" : [
+  "actions": [
     {
-      "actions" : [
+      "actions": [
         {
-          "key" : "a",
-          "type" : "application",
-          "value" : "/Applications/Affinity.app"
+          "key": "a",
+          "type": "application",
+          "value": "/Applications/Affinity.app"
         },
         {
-          "key" : "c",
-          "type" : "application",
-          "value" : "/Applications/Notion Calendar.app"
+          "key": "c",
+          "type": "application",
+          "value": "/Applications/Notion Calendar.app"
         },
         {
-          "key" : "e",
-          "type" : "application",
-          "value" : "/Applications/Microsoft Excel.app"
+          "key": "e",
+          "type": "application",
+          "value": "/Applications/Microsoft Excel.app"
         },
         {
-          "key" : "g",
-          "type" : "application",
-          "value" : "/Applications/Ghostty.app"
+          "key": "n",
+          "type": "application",
+          "value": "/Applications/Notion.app"
         },
         {
-          "key" : "n",
-          "type" : "application",
-          "value" : "/Applications/Notion.app"
+          "key": "v",
+          "type": "application",
+          "value": "/Applications/CapCut.app"
         },
-        {
-          "key" : "v",
-          "type" : "application",
-          "value" : "/Applications/CapCut.app"
-        },
-        {
-          "actions" : [
-            {
-              "key" : "h",
-              "type" : "application",
-              "value" : "/Applications/Helium.app"
-            },
-            {
-              "key" : "s",
-              "type" : "application",
-              "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
-            },
-            {
-              "key" : "z",
-              "type" : "application",
-              "value" : "/Applications/Zen Browser.app"
-            }
-          ],
-          "iconPath" : "globe",
-          "key" : "b",
-          "label" : "Browser",
-          "type" : "group"
-        },
-        {
-          "actions" : [
-            {
-              "key" : "d",
-              "type" : "application",
-              "value" : "/Applications/Discord.app"
-            },
-            {
-              "key" : "t",
-              "type" : "application",
-              "value" : "/Applications/Telegram Lite.app"
-            },
-            {
-              "key" : "w",
-              "type" : "application",
-              "value" : "/Applications/WhatsApp.localized/WhatsApp.app"
-            }
-          ],
-          "iconPath" : "bubble.left.and.text.bubble.right",
-          "key" : "m",
-          "label" : "Messenger",
-          "type" : "group"
-        }
       ],
-      "iconPath" : "arrow.up.forward.app.fill",
-      "key" : "o",
-      "label" : "Open",
-      "type" : "group"
+      "iconPath": "arrow.up.forward.app.fill",
+      "key": "o",
+      "label": "Open",
+      "type": "group"
     },
     {
-      "actions" : [
+      "actions": [
         {
-          "iconPath" : "rectangle.and.pencil.and.ellipsis",
-          "key" : "a",
-          "label" : "Authy",
-          "type" : "url",
-          "value" : "raycast://extensions/guga4ka/authy/search-otp"
+          "key": "h",
+          "type": "application",
+          "value": "/Applications/Helium.app"
         },
         {
-          "iconPath" : "lock.icloud",
-          "key" : "b",
-          "label" : "Bitwarden",
-          "type" : "url",
-          "value" : "raycast://extensions/jomifepe/bitwarden/search"
+          "key": "s",
+          "type": "application",
+          "value": "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
         },
         {
-          "iconPath" : "camera",
-          "key" : "c",
-          "label" : "Show camera",
-          "type" : "url",
-          "value" : "raycast://extensions/raycast/system/open-camera"
+          "key": "z",
+          "type": "application",
+          "value": "/Applications/Zen Browser.app"
         }
       ],
-      "iconPath" : "gear",
-      "key" : "r",
-      "label" : "Raycast",
-      "type" : "group"
+      "iconPath": "globe",
+      "key": "b",
+      "label": "Browser",
+      "type": "group"
+    },
+    {
+      "actions": [
+        {
+          "key": "d",
+          "type": "application",
+          "value": "/Applications/Discord.app"
+        },
+        {
+          "key": "t",
+          "type": "application",
+          "value": "/Applications/Telegram Lite.app"
+        },
+        {
+          "key": "w",
+          "type": "application",
+          "value": "/Applications/WhatsApp.localized/WhatsApp.app"
+        }
+      ],
+      "iconPath": "bubble.left.and.text.bubble.right",
+      "key": "m",
+      "label": "Messenger",
+      "type": "group"
+    },
+    {
+      "actions": [
+        {
+          "iconPath": "rectangle.and.pencil.and.ellipsis",
+          "key": "a",
+          "label": "Authy",
+          "type": "url",
+          "value": "raycast://extensions/guga4ka/authy/search-otp"
+        },
+        {
+          "iconPath": "lock.icloud",
+          "key": "b",
+          "label": "Bitwarden",
+          "type": "url",
+          "value": "raycast://extensions/jomifepe/bitwarden/search"
+        },
+        {
+          "iconPath": "camera",
+          "key": "c",
+          "label": "Show camera",
+          "type": "url",
+          "value": "raycast://extensions/raycast/system/open-camera"
+        }
+      ],
+      "iconPath": "gear",
+      "key": "r",
+      "label": "Raycast",
+      "type": "group"
+    },
+    {
+      "actions": [
+        {
+          "key": "c",
+          "type": "application",
+          "value": "/Applications/Cursor.app"
+        },
+        {
+          "key": "g",
+          "type": "application",
+          "value": "/Applications/Ghostty.app"
+        },
+        {
+          "key": "t",
+          "type": "application",
+          "value": "/Applications/T3 Code (Alpha).app",
+          "label": "T3 Code"
+        }
+      ],
+      "key": "d",
+      "label": "Dev",
+      "type": "group"
+    },
+    {
+      "actions": [
+        {
+          "key": "f",
+          "label": "fullscreen",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace fullscreen"
+        },
+        {
+          "key": "F",
+          "label": "flatten-workspace-tree",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace flatten-workspace-tree"
+        },
+        {
+          "actions": [
+            {
+              "key": "h",
+              "label": "left",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace join-with left"
+            },
+            {
+              "key": "j",
+              "label": "down",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace join-with down"
+            },
+            {
+              "key": "k",
+              "label": "up",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace join-with up"
+            },
+            {
+              "key": "l",
+              "label": "right",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace join-with right"
+            }
+          ],
+          "key": "j",
+          "label": "join-with",
+          "type": "group"
+        },
+        {
+          "actions": [
+            {
+              "key": "a",
+              "label": "accordion",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace layout accordion horizontal vertical"
+            },
+            {
+              "key": "f",
+              "label": "floating",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace layout floating tiling"
+            },
+            {
+              "key": "t",
+              "label": "tiles",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace layout tiles vertical horizontal"
+            }
+          ],
+          "key": "l",
+          "label": "layout",
+          "type": "group"
+        },
+        {
+          "actions": [
+            {
+              "key": "h",
+              "label": "left",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move left"
+            },
+            {
+              "key": "j",
+              "label": "down",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move down"
+            },
+            {
+              "key": "k",
+              "label": "up",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move up"
+            },
+            {
+              "key": "l",
+              "label": "right",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move right"
+            }
+          ],
+          "key": "m",
+          "label": "move",
+          "type": "group"
+        }
+      ],
+      "iconPath": "/Applications/AeroSpace.app",
+      "key": "a",
+      "label": "Aerospace",
+      "type": "group"
     }
   ],
-  "type" : "group"
+  "type": "group"
 }
