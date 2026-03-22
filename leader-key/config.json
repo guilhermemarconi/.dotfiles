@@ -36,6 +36,30 @@
     {
       "actions": [
         {
+          "key": "c",
+          "type": "application",
+          "value": "/Applications/Cursor.app"
+        },
+        {
+          "key": "t",
+          "type": "application",
+          "value": "/Applications/cmux.app"
+        },
+        {
+          "key": "T",
+          "label": "T3 Code",
+          "type": "application",
+          "value": "/Applications/T3 Code (Alpha).app"
+        }
+      ],
+      "iconPath": "keyboard",
+      "key": "d",
+      "label": "Dev",
+      "type": "group"
+    },
+    {
+      "actions": [
+        {
           "key": "h",
           "type": "application",
           "value": "/Applications/Helium.app"
@@ -82,68 +106,75 @@
     {
       "actions": [
         {
-          "iconPath": "rectangle.and.pencil.and.ellipsis",
-          "key": "a",
-          "label": "Authy",
-          "type": "url",
-          "value": "raycast://extensions/guga4ka/authy/search-otp"
+          "iconPath": "arrow.trianglehead.clockwise",
+          "key": "R",
+          "label": "reload-config",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace reload-config"
         },
         {
-          "iconPath": "lock.icloud",
-          "key": "b",
-          "label": "Bitwarden",
-          "type": "url",
-          "value": "raycast://extensions/jomifepe/bitwarden/search"
-        },
-        {
-          "iconPath": "camera",
-          "key": "c",
-          "label": "Show camera",
-          "type": "url",
-          "value": "raycast://extensions/raycast/system/open-camera"
-        }
-      ],
-      "iconPath": "gear",
-      "key": "r",
-      "label": "Raycast",
-      "type": "group"
-    },
-    {
-      "actions": [
-        {
-          "key": "c",
-          "type": "application",
-          "value": "/Applications/Cursor.app"
-        },
-        {
-          "key": "t",
-          "type": "application",
-          "value": "/Applications/cmux.app"
-        },
-        {
-          "key": "T",
-          "type": "application",
-          "value": "/Applications/T3 Code (Alpha).app",
-          "label": "T3 Code"
-        }
-      ],
-      "key": "d",
-      "label": "Dev",
-      "type": "group"
-    },
-    {
-      "actions": [
-        {
+          "iconPath": "arrow.down.left.and.arrow.up.right.rectangle",
           "key": "f",
           "label": "fullscreen",
           "type": "command",
           "value": "/opt/homebrew/bin/aerospace fullscreen"
         },
         {
+          "iconPath": "macwindow.on.rectangle",
           "key": "F",
           "label": "flatten-workspace-tree",
           "type": "command",
           "value": "/opt/homebrew/bin/aerospace flatten-workspace-tree"
+        },
+        {
+          "actions": [
+            {
+              "key": "c",
+              "label": "workspace c",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace workspace C"
+            },
+            {
+              "key": "b",
+              "label": "workspace b",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace workspace B"
+            },
+            {
+              "key": "n",
+              "label": "workspace n",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace workspace N"
+            },
+            {
+              "key": "m",
+              "label": "workspace m",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace workspace M"
+            },
+            {
+              "key": "g",
+              "label": "workspace g",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace workspace G"
+            },
+            {
+              "key": "1",
+              "label": "workspace 1",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace workspace 1"
+            },
+            {
+              "key": "2",
+              "label": "workspace 2",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace workspace 2"
+            }
+          ],
+          "iconPath": "lane",
+          "key": "w",
+          "label": "workspace",
+          "type": "group"
         },
         {
           "actions": [
@@ -172,6 +203,7 @@
               "value": "/opt/homebrew/bin/aerospace join-with right"
             }
           ],
+          "iconPath": "rectangle.on.rectangle.badge.gearshape",
           "key": "j",
           "label": "join-with",
           "type": "group"
@@ -197,6 +229,7 @@
               "value": "/opt/homebrew/bin/aerospace layout tiles vertical horizontal"
             }
           ],
+          "iconPath": "rectangle.3.group",
           "key": "l",
           "label": "layout",
           "type": "group"
@@ -226,16 +259,118 @@
               "label": "right",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move right"
+            },
+            {
+              "key": "c",
+              "label": "move to workspace c",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace C"
+            },
+            {
+              "key": "C",
+              "label": "move to workspace c and focus",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace C --focus-follows-window"
+            },
+            {
+              "key": "b",
+              "label": "move to workspace b",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace B"
+            },
+            {
+              "key": "B",
+              "label": "move to workspace b and focus",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace B --focus-follows-window"
+            },
+            {
+              "key": "n",
+              "label": "move to workspace n",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace N"
+            },
+            {
+              "key": "N",
+              "label": "move to workspace n and focus",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace N --focus-follows-window"
+            },
+            {
+              "key": "m",
+              "label": "move to workspace m",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace M"
+            },
+            {
+              "key": "M",
+              "label": "move to workspace c and focus",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace M --focus-follows-window"
+            },
+            {
+              "key": "g",
+              "label": "move to workspace g",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace G"
+            },
+            {
+              "key": "G",
+              "label": "move to workspace g and focus",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace G --focus-follows-window"
+            },
+            {
+              "key": "1",
+              "label": "move to workspace 1",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace 1"
+            },
+            {
+              "key": "2",
+              "label": "move to workspace 2",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace 2"
             }
           ],
+          "iconPath": "arrow.up.right.bottomleft.rectangle",
           "key": "m",
           "label": "move",
           "type": "group"
         }
       ],
-      "iconPath": "/Applications/AeroSpace.app",
+      "iconPath": "uiwindow.split.2x1",
       "key": "a",
       "label": "Aerospace",
+      "type": "group"
+    },
+    {
+      "actions": [
+        {
+          "iconPath": "rectangle.and.pencil.and.ellipsis",
+          "key": "a",
+          "label": "Authy",
+          "type": "url",
+          "value": "raycast://extensions/guga4ka/authy/search-otp"
+        },
+        {
+          "iconPath": "lock.icloud",
+          "key": "b",
+          "label": "Bitwarden",
+          "type": "url",
+          "value": "raycast://extensions/jomifepe/bitwarden/search"
+        },
+        {
+          "iconPath": "camera",
+          "key": "c",
+          "label": "Show camera",
+          "type": "url",
+          "value": "raycast://extensions/raycast/system/open-camera"
+        }
+      ],
+      "iconPath": "gear",
+      "key": "r",
+      "label": "Raycast",
       "type": "group"
     }
   ],
