@@ -116,12 +116,12 @@
           "value": "/Applications/Cursor.app"
         },
         {
-          "key": "g",
+          "key": "t",
           "type": "application",
           "value": "/Applications/cmux.app"
         },
         {
-          "key": "t",
+          "key": "T",
           "type": "application",
           "value": "/Applications/T3 Code (Alpha).app",
           "label": "T3 Code"
