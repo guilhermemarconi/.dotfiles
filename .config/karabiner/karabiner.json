@@ -50,6 +50,12 @@
             "devices": [
                 {
                     "identifiers": {
+                        "is_built_in_keyboard": true
+                    },
+                    "ignore": false
+                },
+                {
+                    "identifiers": {
                         "is_keyboard": true,
                         "is_pointing_device": true,
                         "product_id": 45915,
