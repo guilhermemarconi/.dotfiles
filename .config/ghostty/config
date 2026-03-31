@@ -16,9 +16,10 @@ window-padding-color = background
 window-padding-balance = true
 window-save-state = always
 
-font-family = "GeistMono Nerd Font Propo"
+# font-family = "GeistMono Nerd Font Propo"
+font-family = "MapleMono NF"
 font-size = 16
-font-feature = -liga
+# font-feature = -liga
 
 bold-is-bright = true
 
