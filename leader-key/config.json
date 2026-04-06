@@ -366,6 +366,13 @@
           "label": "Show camera",
           "type": "url",
           "value": "raycast://extensions/raycast/system/open-camera"
+        },
+        {
+          "iconPath": "xmark.bin",
+          "key": "e",
+          "label": "Empty trash",
+          "type": "url",
+          "value": "raycast://extensions/raycast/system/empty-trash"
         }
       ],
       "iconPath": "gear",
