@@ -34,6 +34,7 @@ auto-update-channel = tip
 
 # macos-non-native-fullscreen = true
 macos-titlebar-style = hidden
+macos-option-as-alt = true
 macos-icon = chalkboard
 
 keybind = ctrl+cmd+r=reload_config
