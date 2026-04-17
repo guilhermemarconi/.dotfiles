@@ -153,22 +153,16 @@
               "value": "/opt/homebrew/bin/aerospace workspace M"
             },
             {
+              "key": "e",
+              "label": "workspace e",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace workspace E"
+            },
+            {
               "key": "g",
               "label": "workspace g",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace workspace G"
-            },
-            {
-              "key": "1",
-              "label": "workspace 1",
-              "type": "command",
-              "value": "/opt/homebrew/bin/aerospace workspace 1"
-            },
-            {
-              "key": "2",
-              "label": "workspace 2",
-              "type": "command",
-              "value": "/opt/homebrew/bin/aerospace workspace 2"
             }
           ],
           "iconPath": "lane",
@@ -309,6 +303,18 @@
               "value": "/opt/homebrew/bin/aerospace move-node-to-workspace M --focus-follows-window"
             },
             {
+              "key": "e",
+              "label": "move to workspace e",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace E"
+            },
+            {
+              "key": "E",
+              "label": "move to workspace e and focus",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace E --focus-follows-window"
+            },
+            {
               "key": "g",
               "label": "move to workspace g",
               "type": "command",
@@ -319,18 +325,6 @@
               "label": "move to workspace g and focus",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move-node-to-workspace G --focus-follows-window"
-            },
-            {
-              "key": "1",
-              "label": "move to workspace 1",
-              "type": "command",
-              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace 1"
-            },
-            {
-              "key": "2",
-              "label": "move to workspace 2",
-              "type": "command",
-              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace 2"
             }
           ],
           "iconPath": "arrow.up.right.bottomleft.rectangle",
