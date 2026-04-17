@@ -246,4 +246,12 @@ if.app-id = 'com.lemon.lvoverseas'
 run = 'move-node-to-workspace E'
 
 [[on-window-detected]]
+if.app-id = 'com.apple.ActivityMonitor'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.DiskUtility'
+run = 'layout floating'
+
+[[on-window-detected]]
 run = 'move-node-to-workspace E'

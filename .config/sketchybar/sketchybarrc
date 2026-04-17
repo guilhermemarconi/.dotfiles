@@ -44,6 +44,7 @@ for WORKSPACE in C B N M E G; do
     label="$WORKSPACE" \
     icon.drawing=off \
     width=dynamic \
+    click_script="/opt/homebrew/bin/aerospace workspace $WORKSPACE" \
     padding_left=$PADDING_LEFT \
     padding_right=3 \
     label.padding_left=8 \
@@ -68,26 +69,31 @@ sketchybar \
     --set clock \
       update_freq=10 \
       icon= \
+      click_script="open -a 'Notion Calendar'" \
       script="$PLUGIN_DIR/clock.sh" \
   \
   --add item wifi right \
     --set wifi \
+      click_script="open 'x-apple.systempreferences:com.apple.wifi-settings-extension'" \
       script="$PLUGIN_DIR/wifi.sh" \
       --subscribe wifi_change \
   \
   --add item volume right \
     --set volume \
+      click_script="/opt/homebrew/bin/aerospace volume mute-toggle --no-gui" \
       script="$PLUGIN_DIR/volume.sh" \
       --subscribe volume volume_change \
   \
   --add item battery right \
     --set battery \
       update_freq=120 \
+      click_script="open 'x-apple.systempreferences:com.apple.Battery-Settings.extension'" \
       script="$PLUGIN_DIR/battery.sh" \
       --subscribe battery system_woke power_source_change \
   \
   --add item disk right \
     --set disk \
+      click_script="open -a 'Disk Utility'" \
       script="$PLUGIN_DIR/disk.sh" \
       icon= \
       update_freq=3 \
@@ -98,6 +104,7 @@ sketchybar \
   \
   --add graph cpu_usage right 50 \
      --set cpu_usage script="$PLUGIN_DIR/cpu_usage.sh" \
+     click_script="open -a 'Activity Monitor'" \
      update_freq=5 \
      label.color=$WHITE \
      graph.color=$WHITE \
