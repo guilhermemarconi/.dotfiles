@@ -49,7 +49,7 @@
           "key": "T",
           "label": "T3 Code",
           "type": "application",
-          "value": "/Applications/T3 Code (Alpha).app"
+          "value": "/Applications/T3 Code (Nightly).app"
         }
       ],
       "iconPath": "keyboard",
@@ -59,6 +59,13 @@
     },
     {
       "actions": [
+        {
+          "iconPath": "magnifyingglass",
+          "key": "a",
+          "label": "Ask Perplexity",
+          "type": "url",
+          "value": "raycast://extensions/third774/perplexity/ask-perplexity?arguments=%7B%22query%22%3A%22%22%7D"
+        },
         {
           "key": "h",
           "type": "application",
@@ -129,36 +136,42 @@
         {
           "actions": [
             {
+              "iconPath": "c.circle",
               "key": "c",
               "label": "workspace c",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace workspace C"
             },
             {
+              "iconPath": "b.circle",
               "key": "b",
               "label": "workspace b",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace workspace B"
             },
             {
+              "iconPath": "n.circle",
               "key": "n",
               "label": "workspace n",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace workspace N"
             },
             {
+              "iconPath": "m.circle",
               "key": "m",
               "label": "workspace m",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace workspace M"
             },
             {
+              "iconPath": "e.circle",
               "key": "e",
               "label": "workspace e",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace workspace E"
             },
             {
+              "iconPath": "g.circle",
               "key": "g",
               "label": "workspace g",
               "type": "command",
@@ -173,24 +186,28 @@
         {
           "actions": [
             {
+              "iconPath": "inset.filled.topleft.bottomleft.righthalf.rectangle",
               "key": "h",
               "label": "left",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace join-with left"
             },
             {
+              "iconPath": "inset.filled.tophalf.bottomleft.bottomright.rectangle",
               "key": "j",
               "label": "down",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace join-with down"
             },
             {
+              "iconPath": "inset.filled.topleft.topright.bottomhalf.rectangle",
               "key": "k",
               "label": "up",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace join-with up"
             },
             {
+              "iconPath": "inset.filled.lefthalf.topright.bottomright.rectangle",
               "key": "l",
               "label": "right",
               "type": "command",
@@ -205,18 +222,21 @@
         {
           "actions": [
             {
+              "iconPath": "square.stack",
               "key": "a",
               "label": "accordion",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace layout accordion horizontal vertical"
             },
             {
+              "iconPath": "inset.filled.center.rectangle",
               "key": "f",
               "label": "floating",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace layout floating tiling"
             },
             {
+              "iconPath": "square.split.2x1",
               "key": "t",
               "label": "tiles",
               "type": "command",
@@ -231,96 +251,112 @@
         {
           "actions": [
             {
+              "iconPath": "inset.filled.lefthalf.arrow.left.rectangle",
               "key": "h",
               "label": "left",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move left"
             },
             {
+              "iconPath": "dock.arrow.down.rectangle",
               "key": "j",
               "label": "down",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move down"
             },
             {
+              "iconPath": "dock.arrow.up.rectangle",
               "key": "k",
               "label": "up",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move up"
             },
             {
+              "iconPath": "inset.filled.righthalf.arrow.right.rectangle",
               "key": "l",
               "label": "right",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move right"
             },
             {
+              "iconPath": "c.circle",
               "key": "c",
               "label": "move to workspace c",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move-node-to-workspace C"
             },
             {
+              "iconPath": "c.circle.fill",
               "key": "C",
               "label": "move to workspace c and focus",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move-node-to-workspace C --focus-follows-window"
             },
             {
+              "iconPath": "b.circle",
               "key": "b",
               "label": "move to workspace b",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move-node-to-workspace B"
             },
             {
+              "iconPath": "b.circle.fill",
               "key": "B",
               "label": "move to workspace b and focus",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move-node-to-workspace B --focus-follows-window"
             },
             {
+              "iconPath": "n.circle",
               "key": "n",
               "label": "move to workspace n",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move-node-to-workspace N"
             },
             {
+              "iconPath": "n.circle.fill",
               "key": "N",
               "label": "move to workspace n and focus",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move-node-to-workspace N --focus-follows-window"
             },
             {
+              "iconPath": "m.circle",
               "key": "m",
               "label": "move to workspace m",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move-node-to-workspace M"
             },
             {
+              "iconPath": "m.circle.fill",
               "key": "M",
-              "label": "move to workspace c and focus",
+              "label": "move to workspace m and focus",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move-node-to-workspace M --focus-follows-window"
             },
             {
+              "iconPath": "e.circle",
               "key": "e",
               "label": "move to workspace e",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move-node-to-workspace E"
             },
             {
+              "iconPath": "e.circle.fill",
               "key": "E",
               "label": "move to workspace e and focus",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move-node-to-workspace E --focus-follows-window"
             },
             {
+              "iconPath": "g.circle",
               "key": "g",
               "label": "move to workspace g",
               "type": "command",
               "value": "/opt/homebrew/bin/aerospace move-node-to-workspace G"
             },
             {
+              "iconPath": "g.circle.fill",
               "key": "G",
               "label": "move to workspace g and focus",
               "type": "command",
@@ -336,6 +372,49 @@
       "iconPath": "uiwindow.split.2x1",
       "key": "a",
       "label": "Aerospace",
+      "type": "group"
+    },
+    {
+      "actions": [
+        {
+          "iconPath": "dot.radiowaves.left.and.right",
+          "key": "b",
+          "label": "Bluetooth",
+          "type": "url",
+          "value": "raycast://extensions/VladCuciureanu/toothpick/manage-bluetooth-connections"
+        },
+        {
+          "iconPath": "mug",
+          "key": "c",
+          "label": "Toggle Caffeinate",
+          "type": "url",
+          "value": "raycast://extensions/mooxl/coffee/caffeinateToggle"
+        },
+        {
+          "iconPath": "xmark.bin",
+          "key": "e",
+          "label": "Empty trash",
+          "type": "url",
+          "value": "raycast://extensions/raycast/system/empty-trash"
+        },
+        {
+          "iconPath": "light.max",
+          "key": "k",
+          "label": "Toggle Keyboard Backlight",
+          "type": "url",
+          "value": "raycast://extensions/huzef44/keyboard-brightness/toggle-keyboard-brightness"
+        },
+        {
+          "iconPath": "archivebox",
+          "key": "u",
+          "label": "Uninstall App",
+          "type": "url",
+          "value": "raycast://extensions/dziad/appcleaner/uninstall"
+        }
+      ],
+      "iconPath": "",
+      "key": "s",
+      "label": "System",
       "type": "group"
     },
     {
@@ -362,11 +441,11 @@
           "value": "raycast://extensions/raycast/system/open-camera"
         },
         {
-          "iconPath": "xmark.bin",
-          "key": "e",
-          "label": "Empty trash",
+          "iconPath": "microphone",
+          "key": "s",
+          "label": "Record with Superwhisper",
           "type": "url",
-          "value": "raycast://extensions/raycast/system/empty-trash"
+          "value": "raycast://extensions/nchudleigh/superwhisper/toggle-record"
         }
       ],
       "iconPath": "gear",
