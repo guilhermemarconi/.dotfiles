@@ -210,6 +210,10 @@ if.app-id = 'net.imput.helium'
 run = 'move-node-to-workspace B'
 
 [[on-window-detected]]
+if.app-id = 'com.apple.Safari'
+run = 'move-node-to-workspace B'
+
+[[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
 run = 'move-node-to-workspace M'
 
