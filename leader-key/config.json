@@ -75,11 +75,6 @@
           "key": "s",
           "type": "application",
           "value": "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
-        },
-        {
-          "key": "z",
-          "type": "application",
-          "value": "/Applications/Zen Browser.app"
         }
       ],
       "iconPath": "globe",
