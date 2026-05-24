@@ -1,5 +1,6 @@
 .DS_Store
 
+.config/git
 .config/gh
 .config/mole
 .config/nvim/lazy-lock.json
