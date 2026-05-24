@@ -228,6 +228,8 @@ vim.keymap.set("n", "<C-t>", "<cmd>:term<CR>", { desc = "Open [T]erminal" })
 
 vim.keymap.set("n", "gh", vim.lsp.buf.hover, { desc = "LSP: [H]over" })
 
+vim.keymap.set("n", "<leader>cc", "<cmd>ClaudeCode<CR>", { desc = "Toggle Claude Code" })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
