@@ -422,6 +422,50 @@
           "value": "raycast://extensions/guga4ka/authy/search-otp"
         },
         {
+          "actions": [
+            {
+              "key": "c",
+              "label": "Chat",
+              "type": "url",
+              "value": "raycast://extensions/eggsy/apfel/chat"
+            },
+            {
+              "key": "t",
+              "label": "Translate",
+              "type": "url",
+              "value": "raycast://extensions/eggsy/apfel/translate"
+            },
+            {
+              "key": "m",
+              "label": "Models",
+              "type": "url",
+              "value": "raycast://extensions/eggsy/apfel/model"
+            },
+            {
+              "key": "s",
+              "label": "Scan Code",
+              "type": "url",
+              "value": "raycast://extensions/eggsy/apfel/ocr-qr"
+            },
+            {
+              "key": "e",
+              "label": "Explain Text",
+              "type": "url",
+              "value": "raycast://extensions/eggsy/apfel/explain"
+            },
+            {
+              "key": "h",
+              "label": "History",
+              "type": "url",
+              "value": "raycast://extensions/eggsy/apfel/history"
+            }
+          ],
+          "iconPath": "apple.intelligence",
+          "key": "A",
+          "label": "Apfel",
+          "type": "group"
+        },
+        {
           "iconPath": "lock.icloud",
           "key": "b",
           "label": "Bitwarden",
