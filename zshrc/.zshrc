@@ -132,11 +132,11 @@ alias src="source ~/.zshrc"
 # alias lla="ll -a"
 alias nq="networkQuality"
 alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
-alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions -a"
 alias cd="z"
 
 source <(fzf --zsh)
 eval "$(zoxide init zsh)"
 
-# Added by Antigravity
-export PATH="/Users/marconi/.antigravity/antigravity/bin:$PATH"
+# Created by `pipx` on 2026-05-31 22:35:16
+export PATH="$PATH:/Users/marconi/.local/bin"
