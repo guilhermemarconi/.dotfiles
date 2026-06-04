@@ -135,6 +135,40 @@ alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /de
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions -a"
 alias cd="z"
 
+gwtg() {
+  local main_worktree
+  main_worktree=$(git worktree list 2>/dev/null | head -1 | awk '{print $1}')
+  if [[ -z "$main_worktree" ]]; then
+    echo "gwtg: not in a git repo" >&2
+    return 1
+  fi
+  if [[ -z "$1" ]]; then
+    builtin cd "$main_worktree"
+  else
+    local project_name
+    project_name=$(basename "$main_worktree")
+    builtin cd "$HOME/dev/worktrees/$project_name/$1"
+  fi
+}
+
+unalias gwta 2>/dev/null
+gwta() {
+  if [[ -z "$1" ]]; then
+    echo "gwta: worktree name required" >&2
+    return 1
+  fi
+  local main_worktree
+  main_worktree=$(git worktree list 2>/dev/null | head -1 | awk '{print $1}')
+  if [[ -z "$main_worktree" ]]; then
+    echo "gwta: not in a git repo" >&2
+    return 1
+  fi
+  local project_name worktree_path
+  project_name=$(basename "$main_worktree")
+  worktree_path="$HOME/dev/worktrees/$project_name/$1"
+  git worktree add -b "$1" "$worktree_path" && builtin cd "$worktree_path"
+}
+
 source <(fzf --zsh)
 eval "$(zoxide init zsh)"
 
