@@ -20,6 +20,16 @@ export FZF_DEFAULT_OPTS=" \
 --color=selected-bg:#45475A \
 --color=border:#6C7086,label:#CDD6F4"
 
+export PATH="/Users/marconi/.local/state/fnm_multishells/63172_1780621705930/bin":$PATH
+export FNM_MULTISHELL_PATH="/Users/marconi/.local/state/fnm_multishells/63172_1780621705930"
+export FNM_VERSION_FILE_STRATEGY="local"
+export FNM_DIR="/Users/marconi/.local/share/fnm"
+export FNM_LOGLEVEL="info"
+export FNM_NODE_DIST_MIRROR="https://nodejs.org/dist"
+export FNM_COREPACK_ENABLED="false"
+export FNM_RESOLVE_ENGINES="true"
+export FNM_ARCH="arm64"
+
 eval "$(starship init zsh)"
 # eval "$(fnm env --use-on-cd)"
 
@@ -174,3 +184,16 @@ eval "$(zoxide init zsh)"
 
 # Created by `pipx` on 2026-05-31 22:35:16
 export PATH="$PATH:/Users/marconi/.local/bin"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/marconi/.lmstudio/bin"
+# End of LM Studio CLI section
+
+
+# pnpm
+export PNPM_HOME="/Users/marconi/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
