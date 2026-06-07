@@ -145,11 +145,11 @@ alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /de
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions -a"
 alias cd="z"
 
-gwtg() {
+gtwt() {
   local main_worktree
   main_worktree=$(git worktree list 2>/dev/null | head -1 | awk '{print $1}')
   if [[ -z "$main_worktree" ]]; then
-    echo "gwtg: not in a git repo" >&2
+    echo "gtwt: not in a git repo" >&2
     return 1
   fi
   if [[ -z "$1" ]]; then
