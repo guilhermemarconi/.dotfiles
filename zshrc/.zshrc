@@ -141,7 +141,7 @@ alias src="source ~/.zshrc"
 # alias ll="exa -l -g --icons --octal-permissions --no-permissions --no-user -s type --time-style long-iso"
 # alias lla="ll -a"
 alias nq="networkQuality"
-alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
+alias cat="bat --theme=\"Catppuccin Mocha\""
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions -a"
 alias cd="z"
 
