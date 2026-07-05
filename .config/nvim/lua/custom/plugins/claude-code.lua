@@ -8,6 +8,7 @@ return {
 			window = {
 				position = "vertical",
 			},
+			command = "headroom wrap claude",
 		})
 	end,
 }
