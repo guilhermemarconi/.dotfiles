@@ -1,5 +1,7 @@
 .DS_Store
 
+.tokensave/
+
 .config/git
 .config/gh
 .config/mole
