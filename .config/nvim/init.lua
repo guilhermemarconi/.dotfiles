@@ -703,6 +703,15 @@ require("lazy").setup({
 			--  - capabilities (table): Override fields in capabilities. Can be used to disable certain LSP features.
 			--  - settings (table): Override the default settings passed when initializing the server.
 			--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
+			local typescript_tsdk_path = vim.fs.joinpath(
+				vim.fn.stdpath("data"),
+				"mason",
+				"packages",
+				"typescript-language-server",
+				"node_modules",
+				"typescript",
+				"lib"
+			)
 			local servers = {
 				-- clangd = {},
 				-- gopls = {},
@@ -714,8 +723,27 @@ require("lazy").setup({
 				--    https://github.com/pmizio/typescript-tools.nvim
 				--
 				-- But for many setups, the LSP (`ts_ls`) will work just fine
-				-- ts_ls = {},
+				ts_ls = {
+					init_options = {
+						tsdk = typescript_tsdk_path,
+					},
+				},
 				--
+
+				astro = {
+					init_options = {
+						typescript = {
+							tsdk = typescript_tsdk_path,
+						},
+					},
+					-- mason-lspconfig ships its own before_init for astro that
+					-- overwrites tsdk via its vendored-typescript lookup, which
+					-- fails because astro-language-server doesn't vendor
+					-- typescript. Force our own resolved tsdk instead.
+					before_init = function(_, config)
+						config.init_options.typescript.tsdk = typescript_tsdk_path
+					end,
+				},
 
 				lua_ls = {
 					-- cmd = { ... },
@@ -755,17 +783,18 @@ require("lazy").setup({
 			require("mason-lspconfig").setup({
 				ensure_installed = {}, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
 				automatic_installation = false,
-				handlers = {
-					function(server_name)
-						local server = servers[server_name] or {}
-						-- This handles overriding only values explicitly passed
-						-- by the server configuration above. Useful when disabling
-						-- certain features of an LSP (for example, turning off formatting for ts_ls)
-						server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
-						require("lspconfig")[server_name].setup(server)
-					end,
-				},
 			})
+
+			-- mason-lspconfig's automatic_enable runs synchronously inside the
+			-- setup() call above and calls vim.lsp.config()/vim.lsp.enable() for
+			-- every installed server using its own presets (see
+			-- mason-lspconfig/lsp/*.lua). We apply our overrides (capabilities,
+			-- init_options, etc.) afterwards so they take precedence.
+			for server_name, server in pairs(servers) do
+				server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
+				vim.lsp.config(server_name, server)
+				vim.lsp.enable(server_name)
+			end
 		end,
 	},
 
