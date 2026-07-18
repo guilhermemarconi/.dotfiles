@@ -7,9 +7,9 @@ alpha-blending = native
 cursor-style-blink = true
 cursor-text = #111111
 
-# background-opacity = 0.75
-# background-blur = true
-# background-blur-radius = 20
+background-opacity = 0.9
+background-blur = true
+background-blur-radius = 20
 
 window-decoration = true
 window-padding-color = background
