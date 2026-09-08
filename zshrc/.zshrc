@@ -30,6 +30,8 @@ export FNM_COREPACK_ENABLED="false"
 export FNM_RESOLVE_ENGINES="true"
 export FNM_ARCH="arm64"
 
+export CLAUDE_PACKAGE_MANAGER=pnpm
+
 eval "$(starship init zsh)"
 # eval "$(fnm env --use-on-cd)"
 
@@ -137,13 +139,14 @@ complete -o nospace -C /opt/homebrew/bin/terraform terraform
 # Example aliases
 alias zsc="nvim ~/.zshrc"
 alias src="source ~/.zshrc"
-# alias npmpls="rm -rf node_modules/ npm-lock.json pnpm-lock.yaml yarn.lock && yarn"
+alias npmpls="rm -rf node_modules/ npm-lock.json pnpm-lock.yaml yarn.lock && pnpm i"
 # alias ll="exa -l -g --icons --octal-permissions --no-permissions --no-user -s type --time-style long-iso"
 # alias lla="ll -a"
 alias nq="networkQuality"
 alias cat="bat --theme=\"Catppuccin Mocha\""
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions -a"
 alias cd="z"
+alias hwc="headroom wrap claude"
 
 gtwt() {
   local main_worktree
