@@ -390,7 +390,7 @@
           "key": "e",
           "label": "Empty trash",
           "type": "url",
-          "value": "raycast://extensions/raycast/system/empty-trash"
+          "value": "raycast://extensions/raycast/system-actions/empty-trash"
         },
         {
           "iconPath": "light.max",
@@ -477,7 +477,7 @@
           "key": "c",
           "label": "Show camera",
           "type": "url",
-          "value": "raycast://extensions/raycast/system/open-camera"
+          "value": "raycast://extensions/raycast/raycast/open-camera"
         },
         {
           "iconPath": "microphone",
