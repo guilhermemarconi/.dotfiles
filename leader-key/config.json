@@ -26,6 +26,11 @@
           "key": "v",
           "type": "application",
           "value": "/Applications/CapCut.app"
+        },
+        {
+          "key": "s",
+          "type": "application",
+          "value": "/Applications/Steam.app"
         }
       ],
       "iconPath": "arrow.up.forward.app.fill",
