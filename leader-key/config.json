@@ -405,6 +405,13 @@
           "value": "raycast://extensions/huzef44/keyboard-brightness/toggle-keyboard-brightness"
         },
         {
+          "iconPath": "lock",
+          "key": "l",
+          "label": "Lock",
+          "type": "url",
+          "value": "raycast://extensions/raycast/system-actions/lock-screen"
+        },
+        {
           "iconPath": "archivebox",
           "key": "u",
           "label": "Uninstall App",
