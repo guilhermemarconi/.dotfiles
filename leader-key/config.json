@@ -77,9 +77,9 @@
           "value": "/Applications/Helium.app"
         },
         {
-          "key": "s",
+          "key": "c",
           "type": "application",
-          "value": "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+          "value": "/Applications/Google Chrome.app"
         }
       ],
       "iconPath": "globe",
