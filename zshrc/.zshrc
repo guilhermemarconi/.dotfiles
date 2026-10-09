@@ -147,6 +147,9 @@ alias cat="bat --theme=\"Catppuccin Mocha\""
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions -a"
 alias cd="z"
 alias hwc="headroom wrap claude"
+alias ws="$HOME/.config/ghostty/ws/ws"
+alias wsu="ws up"
+alias wsd="ws down"
 
 gtwt() {
   local main_worktree
