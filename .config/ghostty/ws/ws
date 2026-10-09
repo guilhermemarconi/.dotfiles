@@ -1,0 +1,27 @@
+#!/bin/bash
+# ws up [dir] [layout] | ws down | ws list
+
+WS_HOME="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"
+export PATH="/opt/homebrew/bin:$PATH"
+set -e
+source "$WS_HOME/lib.sh"
+
+case "$1" in
+up)
+	DIR="$(cd "${2:-$PWD}" && pwd)" || exit 1
+	LAYOUT="${3:-dev}"
+	[ -f "$WS_HOME/layouts/$LAYOUT.sh" ] || { echo "ws: layout '$LAYOUT' não existe" >&2; exit 1; }
+	export DIR
+	source "$WS_HOME/layouts/$LAYOUT.sh"
+	;;
+down)
+	source "$WS_HOME/down.sh"
+	;;
+list)
+	ls "$WS_HOME/layouts" | sed 's/\.sh$//'
+	;;
+*)
+	echo "uso: ws up [dir] [layout] | ws down | ws list" >&2
+	exit 1
+	;;
+esac
