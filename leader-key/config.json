@@ -8,6 +8,11 @@
           "value": "/Applications/Affinity.app"
         },
         {
+          "key": "C",
+          "type": "application",
+          "value": "/Applications/Claude.app"
+        },
+        {
           "key": "c",
           "type": "application",
           "value": "/Applications/Notion Calendar.app"
@@ -23,14 +28,19 @@
           "value": "/Applications/Notion.app"
         },
         {
-          "key": "v",
+          "key": "o",
           "type": "application",
-          "value": "/Applications/CapCut.app"
+          "value": "/Applications/Obsidian.app"
         },
         {
           "key": "s",
           "type": "application",
           "value": "/Applications/Steam.app"
+        },
+        {
+          "key": "v",
+          "type": "application",
+          "value": "/Applications/CapCut.app"
         }
       ],
       "iconPath": "arrow.up.forward.app.fill",
