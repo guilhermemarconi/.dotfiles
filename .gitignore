@@ -5,6 +5,7 @@
 .config/git
 .config/gh
 .config/mole
+.config/prismic
 .config/nvim/lazy-lock.json
 .config/raycast/extensions
 .config/raycast/aster-endpoint.json
