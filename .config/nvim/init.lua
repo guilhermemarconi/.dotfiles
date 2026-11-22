@@ -722,10 +722,11 @@ require("lazy").setup({
 				-- Some languages (like typescript) have entire language plugins that can be useful:
 				--    https://github.com/pmizio/typescript-tools.nvim
 				--
-				-- But for many setups, the LSP (`ts_ls`) will work just fine
-				ts_ls = {
-					init_options = {
-						tsdk = typescript_tsdk_path,
+				vtsls = {
+					settings = {
+						vtsls = {
+							autoUseWorkspaceTsdk = true,
+						},
 					},
 				},
 				--
@@ -785,16 +786,6 @@ require("lazy").setup({
 				automatic_installation = false,
 			})
 
-			-- custom_elements_ls ships with no `filetypes`, which nvim's LSP
-			-- client treats as "attach to ALL filetypes" (see :h vim.lsp.Config).
-			-- Combined with its `.git` root_marker, it attaches to virtually
-			-- every buffer in every project, including non-file:// ones
-			-- (oil://, fugitive://, unnamed), which crashes it with
-			-- ERR_INVALID_URL_SCHEME. Scope it to where custom elements
-			-- actually show up.
-			vim.lsp.config("custom_elements_ls", {
-				filetypes = { "html", "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" },
-			})
 
 			-- mason-lspconfig's automatic_enable runs synchronously inside the
 			-- setup() call above and calls vim.lsp.config()/vim.lsp.enable() for
