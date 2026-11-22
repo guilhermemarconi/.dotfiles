@@ -146,7 +146,31 @@ alias nq="networkQuality"
 alias cat="bat --theme=\"Catppuccin Mocha\""
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions -a"
 alias cd="z"
-alias hwc="headroom wrap claude"
+claude() {
+  local advisor="opus"
+  local subagents="haiku"
+  local force=0
+  local extra_args=()
+
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      --advisor)   advisor="$2";   shift 2 ;;
+      --subagents) subagents="$2"; shift 2 ;;
+      --force)     force=1;        shift   ;;
+      *)           extra_args+=("$1"); shift ;;
+    esac
+  done
+
+  if [[ $force -eq 1 ]]; then
+    CLAUDE_CODE_SUBAGENT_MODEL="$subagents" CLAUDE_CODE_SUBAGENT_MODEL_FORCE=1 \
+      headroom wrap command claude --advisor "$advisor" "${extra_args[@]}"
+  else
+    CLAUDE_CODE_SUBAGENT_MODEL="$subagents" \
+      headroom wrap command claude --advisor "$advisor" "${extra_args[@]}"
+  fi
+}
+
+alias hwc="claude"
 alias ws="$HOME/.config/ghostty/ws/ws"
 alias wsu="ws up"
 alias wsd="ws down"
