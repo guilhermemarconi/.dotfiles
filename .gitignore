@@ -12,3 +12,4 @@
 .config/raycast/node-compile-cache
 .config/karabiner/automatic_backups
 /zshrc/.zshrc.bak
+.config/varlock
